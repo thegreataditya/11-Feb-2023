@@ -1,0 +1,370 @@
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+/* designing the nav bar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav>img[src="./pictures/beatsLogo.png"]{
+    height: 2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav div.nav-right-child{
+    display: flex;
+    column-gap: 30px;
+    font-size: small;
+}
+
+nav div.nav-right-child button{
+    padding: 3px 18px;
+    font-size: small;
+    cursor: pointer;
+}
+
+nav div.nav-right-child ul li a{
+    text-decoration: none;
+}
+
+
+/* designing theintro section */
+section.intro{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    line-height: 2rem;
+}
+
+section.intro img.mainImg{
+    position: relative;
+    top: -170px;
+    left: 300px;
+    width: 230px;
+}
+
+section.intro div.main{
+    width: 40%;
+    position: relative;
+    top: 50px;
+    left: 370px;
+}
+
+section.intro div.main *{
+    margin: 15px 0;
+}
+
+section.intro div.main p:nth-child(4){
+    font-size: small;
+    width: 70%;
+}
+
+section.intro div.main .shopping-bag-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: #181a1b;
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+section.intro div.main .shopping-bag-section *{
+    background-color: rgb(26, 25, 25);
+}
+
+section.intro div.main .shopping-bag-section img{
+    height: 1.5rem;
+}
+
+section.intro div.main .shopping-bag-section *{
+    margin: 0;
+}
+
+/* social media section */
+.social-media-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 25%;
+    align-items: center;
+}
+
+
+/* Specifications section */
+section.specification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.specs-logo{
+    margin: 40px 0 20px;
+}
+
+div.specs-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
+}
+
+div.specs-list div.specs-list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.specs-list img:nth-child(2){
+    margin-top: 1.3rem;
+}
+
+div.specs-list-item div:nth-child(1), div.specs-list-item div:nth-child(4){
+    align-self: flex-end;
+}
+
+div.specs-list-item *{
+    margin: 5px;
+}
+
+div.specs-list div.specs-list-item p:nth-child(3){
+    font-size: small;
+}
+
+div.specs-list div.specs-list-item p:nth-child(2){
+    font-size: large;
+}
+
+div.specs-list div.specs-list-item>*{
+    margin: 12px;
+    width: 65%;
+}
+
+
+/* Case section */
+section.case{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.case-logo{
+    margin: 40px 0 20px;
+}
+
+section.case .case-item{
+    display: flex;
+    column-gap: 10vw;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 50px 20%;
+}
+
+.case-item-image{
+    width: 450px;
+}
+
+.case-item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    line-height: 2rem;
+}
+
+.case-item div p:first-child{
+    width: 85%;
+    margin: 10px 0;
+}
+
+.case-item div:nth-child(2)>*{
+    margin: 10px 0;
+}
+
+.case-item div p:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 13px;
+    padding: 4px 10px;
+    background-color: #181a1b;
+    width: 60%;
+    cursor: pointer;
+}
+
+.case-item div p img{
+    height: 1.2rem;
+}
+
+/* buy-product section */
+section.buy-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin: 80px 10%;
+    padding: 80px 10px;
+    background-color: #181a1b;
+}
+
+section.buy-product *{
+    background-color: transparent;
+}
+
+section.buy-product div *{
+    margin: 10px 0;
+}
+
+section.buy-product div div{
+    display: flex;
+    column-gap: 15px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 2px 12px;
+    border-radius: 6px;
+}
+
+section.buy-product div div img{
+    height: 1.3rem;
+}
+
+/* Product section */
+section.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.product .product-logo{
+    margin: 40px 0 25px;
+}
+
+section.product .product-items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+section.product div div img.product-img{
+    height: 8rem;
+    position: relative;
+    top: -70px;
+    z-index: 5;
+    padding-left: 13px;
+}
+
+.product-card{
+    background-color: #181a1b;
+    padding: 20px;
+    margin: 40px 0 10px;
+    cursor: pointer;
+    height: 9rem;
+    width: 10rem;
+}
+
+.product-card *{    
+    background-color:transparent;
+}
+
+section.product .product-items .product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+    bottom: 55px;
+    font-size: small;
+}
+
+.product-info img{
+    height: 1.8rem;
+    background-color: black;
+    padding: 6px;
+}
+
+/* designing the footer */
+footer{
+    margin: 120px 0 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    font-size: large;
+    font-weight: 600;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: small;
+    font-weight: 400;
+}
+
+footer .footer-subscription div:first-child{
+    display: flex;
+    background-color: #181a1b;
+    padding: 2px 6px;
+    margin-bottom: 25px;
+}
+
+footer .footer-subscription div:first-child input{
+    background-color: #181a1b;
+    border: none;
+}
+
+footer .footer-subscription div:first-child div{
+    display: flex;
+    column-gap: 20px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: small;
+    cursor: pointer;
+}
+
+footer .footer-subscription div:nth-child(2){
+    display: flex;
+    column-gap: 20px;
+}
+
+footer img{
+    cursor: pointer;
+}
+
+.arrow-up{
+    cursor: pointer;
+}

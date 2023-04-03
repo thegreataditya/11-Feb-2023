@@ -1,0 +1,187 @@
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    background-color: #f0f4f5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* designing the nav bar for all pages*/
+nav{
+    display: flex;
+    padding: 3rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+nav img{
+    height: 2.5rem;
+}
+
+nav div.links{
+    display: flex;
+    column-gap: 25px;
+}
+
+/* designing the index page */
+main.home-main{
+    display: flex;
+}
+
+.home-main section.left{
+    width: 40%;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.home-main .left h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.home-main .left p{
+    margin-bottom: 10px;
+}
+
+.home-main .left .bottomAngle{
+    margin-left: 410px;
+}
+
+.stethoscope{
+    position: absolute;
+    top: 250px;
+    left: 280px;
+    height: 420px;
+}
+
+.home-main button{
+    padding: 15px 30px;
+    background-color: #24BF77;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: small;
+}
+
+.home-main .right{
+    align-self: self-end;
+}
+
+.home-main .right img.greenBox{
+    height: 400px;
+    position: absolute;
+    right: 55px;
+    top: 250px;
+    z-index: 2;
+}
+
+.home-main .right img.doctor{
+    z-index: 5;
+    height: 600px;
+    position: absolute;
+    right: 70px;
+    top: 80px;
+}
+
+.home-main .right img.yellowBox{
+    height: 400px;
+    position: absolute;
+    right: 50px;
+    top: 270px;
+}
+
+.home-main .left .mouse{
+    position: absolute;
+    left: 570px;
+    top: 580px;
+    z-index: 2;
+}
+
+
+/* designing the about page */
+main.about-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vh 25%;
+}
+
+.about-main h1, .about-main .achievementCard span{
+    color: #24BF77;
+    font-weight: 700;
+}
+
+.about-main h1{
+    margin-bottom: 50px;
+}
+
+.about-main .achievementCard{
+    padding: 15px 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+.about-main .achievement{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    column-gap: 40px;
+}
+
+
+/* designing the contact page */
+main.contact-main form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 50px auto;
+    padding: 40px 40px 10px;
+    background-color: #f0f4f5;
+    box-shadow: 0 0 10px black;
+}
+
+.contact-main form legend{
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contact-main form label{
+    font-weight: 700;
+}
+
+.contact-main form input, .contact-main form textarea{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+}
+
+input[type="submit"]{
+    background-color: #24BF77;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    font-size: small;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
